@@ -1,0 +1,7 @@
+#create a picle file for above model
+import joblib
+#Save model
+joblib.dump(model, "model.pkl")
+
+#Save feature names
+joblib.dump(X.columns.tolist(), "feature_names.pkl")
